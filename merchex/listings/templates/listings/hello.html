@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello Django!</h1>
-    <p> mes groupes prefere : </p>
-    <ul>
-        {%for b in band %}
-            {%if b.name|length > 1 %}
-             <li>{{b.name}}</li>
-             {%endif%}
+ {% extends "listings/base.html" %}
+ {%block title%} Hello{%endblock%}
 
-        {% endfor %}
-        
-     </ul>
-</body>
-</html>
+ {%block content%} 
+        <h1>Hello Django!</h1>
+        <p> mes groupes prefere : </p>
+        <ul>
+            {%for b in band %}
+                {%if b.name|length > 1 %}
+                <li>{{b.name}}</li>
+                {%endif%}
+
+            {% endfor %}
+            
+ {%endblock%}
