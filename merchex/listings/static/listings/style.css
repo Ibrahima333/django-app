@@ -1,3 +1,12 @@
 * {
-    background-color: rgb(120, 116, 15);
+    background-color: rgb(200, 200, 184);
+}
+
+.errorlist { margin-bottom: -10px }
+
+
+.navbar {
+    display: flex;
+    background-color: rgb(233, 252, 255);
+
 }

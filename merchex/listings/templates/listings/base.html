@@ -8,6 +8,15 @@
     <title>{% block title %} {% endblock  %}</title>
 </head>
 <body>
+    <div class="navbar">   
+        <h3>app_listing</h3>
+        <ul>
+            <li><a href="{% url 'about'%}"> about</a></li>
+            <li><a href="{% url 'band-list'%}">liste des groupe</a></li>
+            <li><a href="{% url 'contact'%}">contact</a></li>
+            <li><a href="{% url 'band_create'%}">creer un groupe</a></li>
+        </ul>
+    </div>
     {%block content%} {%endblock%}
 </body>
 </html>
